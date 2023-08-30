@@ -29,13 +29,13 @@ Go to .env and make update for db information
 Clone the project from dev branch
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Kyaw-Zin-Latt/TechSoftCodingTest.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd TechSoftCodingTest
 ```
 
 Install files and package
