@@ -1,0 +1,13 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+$font-family-sans-serif : 'Montserrat', sans-serif;
+
+// Variables
+$primary: #e261a4;
+
+// Bootstrap
+@import '../../public/dashboard/assets/build/scss/AdminLTE';
+
+$swal2-confirm-button-background-color : $primary;
+
+@import "~sweetalert2/src/sweetalert2";
