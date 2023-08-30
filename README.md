@@ -53,6 +53,12 @@ And then
 And then
 
 ```bash
+  composer update
+```
+
+And then
+
+```bash
   npm run watch
 ```
 
@@ -75,6 +81,9 @@ go to "resources/sass/app.scss" and change you want. After you change, you need 
 ```bash
   npm run watch
 ```
+
+## Sample Employee CSV File Link
+https://github.com/Kyaw-Zin-Latt/TechSoftCodingTest/blob/master/sample-employees.csv
 
 ## API Doc
 
