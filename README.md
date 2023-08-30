@@ -56,12 +56,6 @@ And then
 composer update
 ```
 
-And then
-
-```bash
-npm run watch
-```
-
 Run Below Command to create tables at db 
 
 ```bash
