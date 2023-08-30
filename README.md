@@ -29,57 +29,57 @@ Go to .env and make update for db information
 Clone the project from dev branch
 
 ```bash
-  git clone https://github.com/Kyaw-Zin-Latt/TechSoftCodingTest.git
+git clone https://github.com/Kyaw-Zin-Latt/TechSoftCodingTest.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd TechSoftCodingTest
+cd TechSoftCodingTest
 ```
 
 Install files and package
 
 ```bash
-  npm install
+npm install
 ```
 
 And then
 
 ```bash
-  composer install
+composer install
 ```
 
 And then
 
 ```bash
-  composer update
+composer update
 ```
 
 And then
 
 ```bash
-  npm run watch
+npm run watch
 ```
 
 Run Below Command to create tables at db 
 
 ```bash
-  php artisan migrate
+php artisan migrate
 ```
 
 
 Start the server
 
 ```bash
-  php artisan server
+php artisan server
 ```
 
 If you would like to change color and font,
 go to "resources/sass/app.scss" and change you want. After you change, you need to run below command and then wait a second. After that, you can see your changed result by reloading your website
 
 ```bash
-  npm run watch
+npm run watch
 ```
 
 ## Sample Employee CSV File Link

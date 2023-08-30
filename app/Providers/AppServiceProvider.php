@@ -36,12 +36,5 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Paginator::useBootstrap();
-
-//        View::share("abouts",AboutAndSetting::first());
-        View::share("version",Version::first());
-        View::share("backend",BackendConfig::first());
-        View::share("roles",Role::all());
-        View::share("regUsers",User::with("roles")->where("role_id","=","4")->latest("id")->get());
-        View::share("regUsersLimit",User::with("roles")->where("role_id","=","4")->latest("id")->limit(4)->get());
     }
 }
