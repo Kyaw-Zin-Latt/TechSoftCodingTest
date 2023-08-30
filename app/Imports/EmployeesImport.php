@@ -24,10 +24,17 @@ class EmployeesImport implements ToCollection, WithHeadingRow, WithValidation, S
     public function collection(Collection $rows)
     {
         foreach($rows as $row){
-            $user = new Employee();
-            $user->name = $row['name'];
-            $user->email = $row['email'];
-            $user->save();
+            $employee = Employee::find($row['id']);
+            if($employee){
+                $employee->name = $row['name'];
+                $employee->email = $row['email'];
+                $employee->update();
+            } else {
+                $employee = new Employee();
+                $employee->name = $row['name'];
+                $employee->email = $row['email'];
+                $employee->save();
+            }
         }
     }
 
@@ -37,8 +44,8 @@ class EmployeesImport implements ToCollection, WithHeadingRow, WithValidation, S
     public function rules(): array
     {
         return [
-            "name" => "required|min:4|unique:employees,name",
-            "email" => "required|email|unique:employees,email",
+            "name" => "required|min:4",
+            "email" => "required|email",
         ];
     }
 }
