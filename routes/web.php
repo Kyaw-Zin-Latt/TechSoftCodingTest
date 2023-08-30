@@ -34,19 +34,6 @@ Route::prefix("dashboard")->middleware("auth")->group(function(){
     Route::post("/update","ProfileController@update")->name("profile.update");
     Route::post("/update-photo","ProfileController@updatePhoto")->name("profile.updatePhoto");
 
-
-
-
-    // Route::get("/employees/search","UserManagerController@searchReg")->name("employees.search");
-    // Route::get("/employees/{user}/edit","UserManagerController@editReg")->name("employees.edit");
-    // Route::put("/employees/{user}","UserManagerController@updateReg")->name("employees.update");
-    // Route::get("/employees","UserManagerController@indexReg")->name("employees.index");
-    // Route::get("/employees/add","UserManagerController@createReg")->name("employees.create");
-    // Route::post("/employees","UserManagerController@storeReg")->name("employees.store");
-    // Route::delete("/employees/{user}","UserManagerController@destroyReg")->name("employees.destroy");
-    // Route::get("/ban/{user}","UserManagerController@ban")->name("employees.ban");
-    // Route::get("/unban/{user}","UserManagerController@unban")->name("employees.unban");
-
     Route::get('employees/export/', "EmployeeController@export")->name("employees.export");
     Route::get("/employees/csvCreate","EmployeeController@csvCreate")->name("employees.csvCreate");
     Route::post("/employees/csvStore","EmployeeController@importEmployee")->name("employees.csvStore");
